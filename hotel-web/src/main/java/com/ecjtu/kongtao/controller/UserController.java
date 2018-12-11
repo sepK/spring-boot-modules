@@ -20,6 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 public class UserController extends BaseController {
 
     private static final Logger log = LoggerFactory.getLogger(UserController.class);
+
     @RequestMapping(value = "/info")
     public String info(HttpServletRequest request, Model model) {
         User user = userService.getUserById(1);
